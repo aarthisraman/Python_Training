@@ -1,0 +1,188 @@
+## EX 1 :
+------------------------------------------------------
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_1 % git init
+Reinitialized existing Git repository in /Users/aarthiseetharaman/Documents/Python_Training/Git_Assignments/Exercise_1/.git/
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_1 % touch index.html
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_1 % vi index.html
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_1 % cat index.html
+This is Exercise-1
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_1 % git add index.html
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_1 % git commit -m "Initial Message"
+[master d178032] Initial Message
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_1 % git log
+commit d1780327ea4a743c14a77a4799aeadc598e06c04 (HEAD -> master)
+Author: aarthisraman <aarthi2911@gmail.com>
+Date:   Tue Apr 6 05:52:19 2021 -0500
+
+    Initial Message
+
+commit 965f276cc42a3c3d1b8f78137c9a6429514df095 (origin/master)
+Author: aarthisraman <aarthi2911@gmail.com>
+Date:   Tue Apr 6 00:47:30 2021 -0500
+
+    Initial Message
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_1 % 
+----------------------------------------------------------
+##EX 2 ::
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_2 % git init      
+Initialized empty Git repository in /Users/aarthiseetharaman/Documents/Python_Training/Git_Assignments/Exercise_2/.git/
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_2 % touch index.html
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_2 % touch about.html
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_2 % vi index.html
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_2 % vi about.html
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_2 % cat index.html
+Exercise-2 INDEX
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_2 % cat about.html
+Exercise-2 ABOUT
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_2 % git add index.html
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_2 % git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	about.html
+
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_2 % git commit -m"File x added"
+[master (root-commit) 59f8fd8] File x added
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.html
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_2 % git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	about.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_2 % git log
+commit 59f8fd834adb9950629ecda7c9326d9fda952a49 (HEAD -> master)
+Author: aarthisraman <aarthi2911@gmail.com>
+Date:   Tue Apr 6 06:02:28 2021 -0500
+
+    File x added
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_2 % 
+----------------------------------------------------------
+EX :3
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_3 % git init 
+Reinitialized existing Git repository in /Users/aarthiseetharaman/Documents/Python_Training/Git_Assignments/Exercise_3/.git/
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_3 % touch index.html
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_3 % echo Exercise_3 INDEX > index.html
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_3 % cat index.html
+Exercise_3 INDEX
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_3 % git add index.html
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_3 % git commit -m "adding index.html"
+[master 20d7e2b] adding index.html
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_3 % touch about.html
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_3 % echo Exercise_3 ABOUT > about.html
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_3 % cat about.html
+Exercise_3 ABOUT
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_3 % git commit --amend -m"Adding index.html and about.html"
+[master c6a85ad] Adding index.html and about.html
+ Date: Tue Apr 6 06:25:01 2021 -0500
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_3 % git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	about.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_3 % git log
+commit c6a85ad4c1540c009c47bc41dd95cefb35d4e5f8 (HEAD -> master)
+Author: aarthisraman <aarthi2911@gmail.com>
+Date:   Tue Apr 6 06:25:01 2021 -0500
+
+    Adding index.html and about.html
+
+commit 5bb002a152a6282aaf638039f806a378d65d9e5e
+Author: aarthisraman <aarthi2911@gmail.com>
+Date:   Tue Apr 6 06:06:00 2021 -0500
+
+    Adding index.html and about.html
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_3 % git add .
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_3 % git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   about.html
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   about.html
+
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_3 % git commit --amend --no-edit
+[master 2b16007] Adding index.html and about.html
+ Date: Tue Apr 6 06:25:01 2021 -0500
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 about.html
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_3 % git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+
+nothing added to commit but untracked files present (use "git add" to track)
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_3 % git log
+commit 2b16007a4a4a8731de138c1a2881994f7515f1fc (HEAD -> master)
+Author: aarthisraman <aarthi2911@gmail.com>
+Date:   Tue Apr 6 06:25:01 2021 -0500
+
+    Adding index.html and about.html
+
+commit 5bb002a152a6282aaf638039f806a378d65d9e5e
+Author: aarthisraman <aarthi2911@gmail.com>
+Date:   Tue Apr 6 06:06:00 2021 -0500
+
+    Adding index.html and about.html
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_3 % git log --oneline
+2b16007 (HEAD -> master) Adding index.html and about.html
+5bb002a Adding index.html and about.html
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_3 % git log
+commit 2b16007a4a4a8731de138c1a2881994f7515f1fc (HEAD -> master)
+Author: aarthisraman <aarthi2911@gmail.com>
+Date:   Tue Apr 6 06:25:01 2021 -0500
+
+    Adding index.html and about.html
+
+commit 5bb002a152a6282aaf638039f806a378d65d9e5e
+Author: aarthisraman <aarthi2911@gmail.com>
+Date:   Tue Apr 6 06:06:00 2021 -0500
+
+    Adding index.html and about.html
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_3 % ls
+about.html	index.html
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_3 % 
+----------------------------------------------------------
+Ex : 4
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_4 % git init 
+Initialized empty Git repository in /Users/aarthiseetharaman/Documents/Python_Training/Git_Assignments/Exercise_4/.git/
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_4 % vi gitignore
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_4 % cat gitignore
+*.exe
+*.o
+*.jar
+dir/*
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_4 % 
+----------------------------------------------------------
+Ex : 5
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_5 % git init
+Reinitialized existing Git repository in /Users/aarthiseetharaman/Documents/Python_Training/Git_Assignments/Exercise_5/.git/
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_5 % touch D1.txt D2.txt
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_5 % echo "New D1" > D1.txt
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_5 % echo "New D2" > D2.txt
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_5 % vi D2.txt
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_5 % git stash 
+Saved working directory and index state WIP on master: 2160c43 New Files for STASH
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_5 % git stash list
+stash@{0}: WIP on master: 2160c43 New Files for STASH
+stash@{1}: WIP on master: 2160c43 New Files for STASH
+aarthiseetharaman@Aarthis-MacBook-Pro Exercise_5 % 
+
+
