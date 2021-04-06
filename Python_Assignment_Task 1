@@ -1,0 +1,49 @@
+# 1
+p, q , r = 3.14, "pi", 0
+print(p)
+print(q)
+print(r)
+
+# 2
+a,b =3+4j, 9
+a,b = b,a
+print(a,b)
+
+# 3 using 3rd variable
+a=3
+b=4
+c=a
+a=b
+b=c
+print("a after swapping",a)
+print("b after swapping",b)
+
+# 3 without using 3rd variable
+a=3
+b=4
+a,b = b,a
+print("a after swapping",a)
+print("b after swapping",b)
+
+#4 Python 2.x
+h=raw_input("Enter the number:")
+print h
+
+#4 Python 3.x
+l=input("Enter the number:")
+print(l)
+
+#5
+n1 = input("Enter the 1st number between 1-10")
+n2 = input("Enter the 2nd number between 1-10")
+z=int(n1)+int(n2)
+result = z + 30
+print(result)
+
+#6
+x,y,z=1,1.2,'row'
+print("The Data Type of the input value is :", type(x),type(y),type(z))
+
+#8 
+Yes it will change the value, 
+Variables are essentially like an empty box, that can contain something like a string, number, or other value. When you assign it a value, the box will contain that value, and when you reassign it, it will empty out the old value, and the new value will be placed inside of it.
