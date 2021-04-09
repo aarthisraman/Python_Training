@@ -34,15 +34,15 @@ l=input("Enter the number:")
 print(l)
 
 #5
-n1 = input("Enter the 1st number between 1-10")
-n2 = input("Enter the 2nd number between 1-10")
-z=int(n1)+int(n2)
+n1 = int(input("Enter the 1st number between 1-10"))
+n2 = int(input("Enter the 2nd number between 1-10"))
+z=n1+n2
 result = z + 30
 print(result)
 
-#6
-x,y,z=1,1.2,'row'
-print("The Data Type of the input value is :", type(x),type(y),type(z))
+#6 -- USE EVAL
+x=input("Enter some value: ")
+print("The Data Type of the input value is :", type(x))
 
 #8 
 Yes it will change the value, 
