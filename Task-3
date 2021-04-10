@@ -1,0 +1,13 @@
+## 1
+new=[1,2,'as',1+7j,12.4]
+print(new)
+
+## 2
+new=[1,2,'as',1+7j,12.4]
+r=slice(1,4)
+print(new[r])
+
+##4
+a = [1,2,3]
+print(max(a))
+print(min(a))
