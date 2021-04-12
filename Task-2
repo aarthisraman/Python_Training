@@ -1,4 +1,10 @@
 ## 1
+1. Write a program in Python to perform the following operation:
+If a number is divisible by 3 it should print “Consultadd” as a string
+If a number is divisible by 5 it should print “Python Training” as a string
+If a number is divisible by both 3 and 5 it should print “Consultadd - Python Training” as a
+string.
+
 x = int(input("Enter a number"))
 if x % 3 == 0 and x % 5 == 0:
     print("Consultadd - Python Training")
@@ -6,8 +12,22 @@ elif x % 3 == 0:
     print("Consultadd")
 elif x % 5 == 0:
     print("Python Training")
-    
+----------------------------------    
 ## 2
+2. Write a program in Python to perform the following operator based task:
+Ask user to choose the following option first:
+If User Enter 1 - Addition
+If User Enter 2 - Subtraction
+If User Enter 3 - Division
+If User Enter 4 - Multiplication
+If User Enter 5 - Average
+Ask user to enter two numbers and keep those numbers in variables num1 and num2
+respectively for the first 4 options mentioned above.
+Ask the user to enter two more numbers as first and second for calculating the average as
+soon as the user chooses an option 5.
+At the end if the answer of any operation is Negative print a statement saying “NEGATIVE”
+NOTE: At a time a user can only perform one action.
+
 user = int(input(" Enter 1 - Addition\n Enter 2 - Subtraction\n Enter 3 - Division\n Enter 4 - Multiplication\n Enter 5 - Average\nChoose from the options ::"))
 num1, num2 = input("Enter 2 numbers :").split()
 if user == 1:
@@ -36,8 +56,11 @@ elif user == 5:
     print("Avg :", answer)
     if answer < 0:
         print("NEGATIVE")
-        
+ ----------------------------------         
 ##3
+3. Write a program in Python to implement the given flowchart:
+
+
 a=10
 b=20
 c=30
@@ -57,8 +80,12 @@ elif avg > b:
     print("Avg is just higher than b")
 else:
    print("Avg is just higher than a,c")
-   
+----------------------------------     
 ##4 
+4.Write a program in Python to break and continue if the following cases occurs:
+If user enters a negative number just break the loop and print “It’s Over”
+If user enters a positive number just continue in the loop and print “Good Going”
+
 while True:
     num = int(input("Enter a number"))
     if num < 0:
@@ -67,35 +94,73 @@ while True:
     elif num > 0:
         print("Good Going")
         continue
-        
+ ----------------------------------         
 ##5
+5.Write a program in Python which will find all such numbers which are divisible by 7 but are not a
+multiple of 5, between 2000 and 3200.
+
 for i in range(200,3200):
     if(i%7 == 0 and i%5!=0):
         print(i)
+----------------------------------  
+##6
+6.What is the output of the following code examples?
+##6a)
+x=123
+for i in x:
+    print(i)
 
-##6 a)
+Traceback (most recent call last):
+  File "/Users/aarthiseetharaman/PycharmProjects/Python_Training1/Task1.py", line 2, in <module>
+    for i in x:
+TypeError: 'int' object is not iterable
 
-
-
-
-##6 b)
+##6b)
+i = 0
+while i < 5:
+    print(i)
+    i += 1
+    if i == 3:
+        break
+    else:
+        print(“error”)
+        
 0
 error
 1
 error
 2
-##6 c)
+
+##6c)
+count = 0
+while True:
+    print(count)
+    count += 1
+    if count >= 5:
+        Break
+
 0
 1
 2
 3
 4
+----------------------------------  
 ##7
+7.Write a program that prints all the numbers from 0 to 6 except 3 and 6.
+Expected output: 0 1 2 4 5
+Note: Use ‘continue’ statement
+
 for i in [0,1,2,3,4,5,6]:
     if i == 3 or i == 6:
         continue
     print(i)
+----------------------------------      
 ##8
+8.Write a program that accepts a string as an input from the user and calculate the number of digits
+and letters.
+Sample input: consul72
+Expected output: Letters 6 Digits 2
+
 user = input("Enter alphanumeric :")
 a=0
 d=0
@@ -106,15 +171,26 @@ for i in range(len(user)):
         d = d+1
 print("Letters ",a)
 print("Digits ",d)
+----------------------------------  
+##9 
+Read the 2 parts of the question below:
+a)Write a program such that it asks users to “guess the lucky number”. If the correct number is
+guessed the program stops, otherwise it continues forever.
 
-##9 a)
 while True:
     user = int(input("Guess the lucky number:"))
     if user == 5:
         break
     else:
         continue
+        
 ##9 b)
+Modify the program so that it asks users whether they want to guess again each time. Use two
+variables, ‘number’ for the number and ‘answer’ for the answer to the question whether they want
+to continue guessing. The program stops if the user guesses the correct number or answers “no”. (
+The program continues as long as a user has not answered “no” and has not guessed the correct
+number)
+
 while True:
     user = int(input("Guess the lucky number:"))
     if user == 5:
@@ -124,8 +200,19 @@ while True:
         continue
     else:
         break
-        
+----------------------------------          
 #10 
+10.Write a program that asks five times to guess the lucky number. Use a while loop and a counter,
+such as
+counter=1
+While counter <= 5:
+    print(“Type in the”, counter, “number”
+    counter=counter+1
+The program asks for five guesses (no matter whether the correct number was guessed or not). If the
+correct number is guessed, the program outputs “Good guess!”, otherwise it outputs “Try again!”.
+After the fifth guess it stops and prints “Game over!”.
+
+
 counter=1
 while counter<=5:
     l=50
@@ -137,7 +224,14 @@ while counter<=5:
     else:
         print("Try Again!")
 print("Game Over!")
+
+----------------------------------  
 ##11
+11.In the previous question, insert break after the “Good guess!” print statement. break will terminate
+the while loop so that users do not have to continue guessing after they found the number. If the user
+does not guess the number at all, print “Sorry but that was not very successful”.
+
+
 counter=1
 while counter<=5:
     l=50
