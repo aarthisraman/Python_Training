@@ -1,0 +1,78 @@
+##1
+Write a program to reverse a string.
+Sample input: “1234abcd”
+Expected output: “dcba4321”
+
+s="1234abcd"
+print(s)
+print(s[len(s)::-1])
+
+##2
+Write a function that accepts a string and prints the number of uppercase letters and lowercase
+letters.
+Sample input: “abcSdefPghijQkl”
+Expected Output: No. of Uppercase characters : 3 No. of Lower case Characters : 12
+
+s=input("Enter a string")
+x=filter(lambda x:x.isupper(),s)
+print("No of Uppercase Character :",len(set(x)))
+y=filter(lambda y:y.islower(),s)
+print("No. of Lowercase Characters :",len(set(y)))
+
+##3
+Create a function that takes a list and returns a new list with unique elements of the first list.
+
+def unique():
+    s=input("Enter some numbers:").split()
+    print("The unique numbers are ",list(set(s)))
+
+unique()
+
+##4
+Write a program that accepts a hyphen-separated sequence of words as input and prints the words
+in a hyphen-separated sequence after sorting them alphabetically.
+
+def string():
+    value=input("Enter hyphenated words:").split('-')
+    value.sort()
+    print('-'.join(value))
+string()
+
+##5
+Write a program that accepts a sequence of lines as input and prints the lines after making all
+characters in the sentence capitalized.
+Sample input: Hello world Practice makes man perfect
+Expected output: HELLO WORLD PRACTICE MAKES MAN PERFECT
+
+s=input("Enter a string:")
+print(s.upper())
+
+##6
+Define a function that can receive two integral numbers in string form and compute their sum and
+print it in the console.
+
+def add():
+    s,t=input("Enter 2 numbers:").split()
+    sum=int(s)+int(t)
+    return(sum)
+print("The sum of the 2 numbers is :",add())
+
+##7
+Define a function that can accept two strings as input and print the string with the maximum length
+in the console. If two strings have the same length, then the function should print both the strings line
+by line.
+
+def two():
+    s,t=input("Enter 2 words:").split()
+    if len(s) > len(t):
+        print(s)
+    elif len(s) < len(t):
+        print(t)
+    else:
+        print(s,t,sep ='\n')
+two()
+
+##8
+Define a function which can generate and print a tuple where the values are square of numbers
+between 1 and 20 (both 1 and 20 included).
+
