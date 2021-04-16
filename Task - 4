@@ -76,3 +76,51 @@ two()
 Define a function which can generate and print a tuple where the values are square of numbers
 between 1 and 20 (both 1 and 20 included).
 
+def square():
+    t = map(lambda s:s**2,range(1,21))
+    print(tuple(t))
+square()
+
+##9
+Write a function called showNumbers that takes a parameter called limit. It should print all the
+numbers between 0 and limit with a label to identify the even and odd numbers.
+Sample input: show Numbers(3) (where limit=3)
+Expected output:
+0 EVEN
+1 ODD
+2 EVEN
+3 ODD
+
+x=int(input("Enter the limit"))
+i=0
+for i in range(0,x):
+    if i%2==0:
+        print(i,"EVEN")
+    else :
+        print(i,"ODD")
+        
+ ##10
+ Write a program which uses filter() to make a list whose elements are even numbers between 1
+and 20 (both included)
+
+i=filter(lambda x:x%2==0,range(1,21))
+print(list(i))
+
+##11
+Write a program which uses map() and filter() to make a list whose elements are squares of even
+numbers in [1,2,3,4,5,6,7,8,9,10].
+Hints: Use filter() to filter even elements of the given listUse map() to generate a list of squares of the
+numbers in the filtered list. Use lambda() to define anonymous functions.
+
+i=filter(lambda x:x%2==0,range(1,11))
+k=map(lambda j:j**2,list(i))
+print(list(k))
+
+
+try:
+    x=5/0
+    print(x)
+except ZeroDivisionError:
+    print("Can't divide by zero")
+
+
