@@ -1,15 +1,28 @@
 # 1
+1. Create three variables in a single line and assign values to them in such a manner that each one of them belongs to a different data type.
+E.g. :
+a = 1,
+b = 2.01,
+c = 'string'
+
 p, q , r = 3.14, "pi", 0
 print(p)
 print(q)
 print(r)
+---------------------------------
 
-# 2
+## 2
+Create a variable of type complex and swap it with another variable of type integer.
+
 a,b =3+4j, 9
 a,b = b,a
 print(a,b)
+---------------------------------
 
-# 3 using 3rd variable
+# 3. Swap two numbers using a third variable and do the same task without using any third variable.
+
+USING 3rd VARIABLE ::
+
 a=3
 b=4
 c=a
@@ -18,32 +31,63 @@ b=c
 print("a after swapping",a)
 print("b after swapping",b)
 
-# 3 without using 3rd variable
+WITHOUT USING 3rd VARIABLE
 a=3
 b=4
 a,b = b,a
 print("a after swapping",a)
 print("b after swapping",b)
+-------------------------------
 
-#4 Python 2.x
+#4 4. Write a program that takes input from the user and prints it using both Python 2.x and Python 3.x Version.
+
+PYTHON 2.X
 h=raw_input("Enter the number:")
 print h
 
-#4 Python 3.x
+PYTHON 3X
 l=input("Enter the number:")
 print(l)
+------------------------------
 
-#5
+#5 Write a program to complete the task given below:
+Ask users to enter any 2 numbers in between 1-10 , add the two numbers and keep the sum in another variable called z. Add 30 to z and store the output in variable result and print result as the final output.
+
 n1 = int(input("Enter the 1st number between 1-10"))
 n2 = int(input("Enter the 2nd number between 1-10"))
 z=n1+n2
 result = z + 30
 print(result)
+------------------------------
 
-#6 -- USE EVAL
+#6 Write a program to check the data type of the entered values.
+HINT: Printed output should say - The data type of the input value is : int/float/string/etc
+  
+-- USE EVAL
 x=input("Enter some value: ")
 print("The Data Type of the input value is :", type(x))
+-------------------------------
 
-#8 
+#7. Create Variables using formats such as Upper CamelCase, Lower CamelCase, SnakeCase and UPPERCASE.
+(Refer: https://capitalizemytitle.com/camel-case/)
+
+Upper CamelCase::
+x="MyNameIsAarthi"
+print(x)
+
+Lower CamelCase::
+x="myNameIsAarthi"
+print(x)
+
+SnakeCase::
+x="My_Name_Is_Aarthi"
+print(x)
+
+UPPERCASE::
+x="MyNameIsAarthi"
+print(x.upper())
+-------------------------------
+
+#8. If one data type value is assigned to ‘a’ variable and then a different data type value is assigned to ‘a’ again. Will it change the value? If Yes then Why? 
 Yes it will change the value, 
 Variables are essentially like an empty box, that can contain something like a string, number, or other value. When you assign it a value, the box will contain that value, and when you reassign it, it will empty out the old value, and the new value will be placed inside of it.
