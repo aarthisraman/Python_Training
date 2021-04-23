@@ -72,20 +72,18 @@ print("The Data Type of the input value is :", type(x))
 (Refer: https://capitalizemytitle.com/camel-case/)
 
 Upper CamelCase::
-x="MyNameIsAarthi"
-print(x)
+MyNameIsAarthi=1
+
 
 Lower CamelCase::
-x="myNameIsAarthi"
-print(x)
+myNameIsAarthi
 
 SnakeCase::
-x="My_Name_Is_Aarthi"
-print(x)
+My_Name_Is_Aarthi
 
 UPPERCASE::
-x="MyNameIsAarthi"
-print(x.upper())
+MYNAMEISAARTHI
+
 -------------------------------
 
 #8. If one data type value is assigned to ‘a’ variable and then a different data type value is assigned to ‘a’ again. Will it change the value? If Yes then Why? 
