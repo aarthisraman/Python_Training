@@ -79,5 +79,10 @@ generates a list and a tuple which contains every number in the form of string.
 Sample input: 34,67,55,33,12,98
 Expected output: [‘34’,’67’,’55’,’33’,’12’,’98’] (‘34’,’67’,’55’,’33’,’12’,’98’)
 
+x=input("Enter some values:").split(',')
+y=str(x)
+print(y)
+print(tuple(x))
+
 ----------------------------------  
 
