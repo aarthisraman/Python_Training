@@ -37,12 +37,10 @@ print(list(l))
 6. Create a list of elements such that it contains the squares of the first and last 5 elements between
 1 and30 (both included).
 
-
-
-
-
-
-
+y = map(lambda x: x**2, range(1,6))
+print(list(y))
+z = map(lambda x: x**2, range(26,31))
+print(list(z))
 ----------------------------------  
 ##7
 7. Write a program to replace the last element in a list with another list.
