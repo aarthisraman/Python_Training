@@ -1,9 +1,12 @@
 ##1
 Write a program in Python to allow the error of syntax to be handled using exception handling. HINT: Use SyntaxError
 
-
-
-
+try:
+    s=int(input("Enter"))
+    if s==6:
+        raise SyntaxError
+except SyntaxError:
+        print("error")
 
 -----------------------------------
 ##2
