@@ -1,0 +1,8 @@
+1.Write a program in Python to iterate through the string “hello my name is abcde” and print the
+string which is having an even length.
+x=input("Enter the string").split()
+for i in x:
+    if len(i)%2==0:
+        print("Even",i)
+    else:
+        print("ODD",i)
